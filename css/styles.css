@@ -264,7 +264,7 @@
         grid-template-areas:
             "img title"
             "img desc"
-            "img desc"
+            "img desc";
 
     }
     .about__profileImg{
@@ -275,6 +275,7 @@
         border: solid var(--clr-accent) 7px;
         border-radius: 50%;
         background-position-x: 39%;
+        box-shadow: var(--bs)
     }
     .section__title--about{
         grid-area: title;
@@ -284,6 +285,39 @@
 
 /*  ----- My Services Section ----- */
     /* TODO */
+.service-list{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3px;
+    border-radius: 15px;
+    padding: 0;
+    /* 
+    border-top-right-radius: 1-px;
+    border-bottom-right-radius: 6px;
+  
+    */
+    box-shadow: var(--bs);
+    
+   
+}
+.service-list__item{
+    padding: 1em;
+    border: 1px solid lightgrey;
+   
+   
+}
+.section__subtitle--services{
+    text-align: center;
+}
+.left-service{
+    
+    border-bottom-left-radius: 15px; 
+    border-top-left-radius: 15px;
+}
+.right-service{
+    border-bottom-right-radius: 15px; 
+    border-top-right-radius: 15px;
+}
 
 
 

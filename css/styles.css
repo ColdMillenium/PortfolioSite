@@ -84,6 +84,13 @@
     section {
         padding: 5em 2em;
     }
+    .section__title{
+        text-align: center;
+        padding-bottom: 0.5em;
+    }
+    .section__subtitle{
+        text-align: center;
+    }
 
 
 
@@ -301,13 +308,23 @@
    
 }
 .service-list__item{
-    padding: 1em;
+    padding: 1.5em;
     border: 1px solid lightgrey;
-   
+    display: grid;
+    grid-template-rows: 7em 3em 7em 3em auto;
    
 }
-.section__subtitle--services{
+.service-list__item-img{
+    height: 5em;
+    justify-self: center;
+}
+.service-list__item-description{
+    text-align:center;
+}
+.service-list_item-dev-tools{
     text-align: center;
+    list-style-type: none;
+    text-decoration: none;
 }
 .left-service{
     
@@ -324,7 +341,30 @@
 /* ----- My work Section ----- */
     .my-work{
         background-color: var(--clr-accent);
+        align-content: center;
     }
+    .work-list{
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        gap: 3em;
+        min-width: 300px;
+    }
+    .work-list__item{
+        background: var(--clr-light);
+        display:grid;
+        grid-template-areas: 
+            "img"
+            "desc" 
+            "tools";
+    
+    }
+    .work-list__item-img{
+        justify-self: center;
+        grid-area: img;
+        width: 100%;
+        height: 20em;
+    }
+
 
 
 /* ----- Contact Section ----- */

@@ -177,7 +177,7 @@
             z-index: 1000;
         }
         .nav-toggle:hover{
-            background-color: var(--clr-light);
+            background-color:transparent;
         }
         
         .hamburger {
@@ -217,6 +217,10 @@
             position: fixed;
         }
 
+        .nav-open .hamburger{
+            transform: rotate
+        }
+
     /* Navigation: media */
         @media (max-width: 700px){
             .nav-bar{
@@ -254,9 +258,26 @@
 
 
 /* ----- About Section ----- */
+    .about-me{
+        display:grid;
+        grid-column-gap: 1em;
+        grid-template-areas:
+            "img title"
+            "img desc"
+            "img desc"
+
+    }
     .about__profileImg{
-        display: block;
-        max-width: 100%;
+        grid-area: img;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 21rem;
+        border: solid var(--clr-accent) 7px;
+        border-radius: 50%;
+        background-position-x: 39%;
+    }
+    .section__title--about{
+        grid-area: title;
     }
 
 

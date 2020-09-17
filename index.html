@@ -5,32 +5,50 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Andrew G. Browning</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/styles.css">
+
         
     </head>
     <body>
-        This is the start of my portfolio website.
         <header>
-            <div class="logo"></div>
+            <img src="https://clipartix.com/wp-content/uploads/2016/07/Letter-monogram-initials-clipart-clipart-kid.png" alt="" class="logo">
+            <nav class="nav-bar">
+                <ul class="nav-bar__links">
+                    <li class="nav-bar__link"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav-bar__link"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav-bar__link"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav-bar__link"><a href="#work" class="nav__link">Portfolio</a></li>
+                    <a href="#contact" ><button class="nav-bar__button">Get in Touch</button></a>
+                </ul>
+            </nav>
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
             </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Portfolio</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Get in Touch</a></li>
+
+            <nav class="nav-menu">
+                <ul class="nav-menu__links">
+                    <li class="nav-menu__link"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav-menu__link"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav-menu__link"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav-menu__link"><a href="#work" class="nav__link">Portfolio</a></li>
+                    <li class="nav-menu__link"><a href="#contact" class="nav__link">Get in Touch</a></li>
                 </ul>
             </nav>
         </header>
 
-        <section class="wecome" id="home">
-            <h2 class="section__title section__title-welcome" > Something Cool! Something inspiring!</h2>
+        <section class="welcome" id="home">
+            <h2 class="section__title section__title-welcome" > Let's Build Something Great</h2>
         </section>
         <!-- Introduction -->
         <section class="about-me" id="about">
-            <img class="about__img" src="" alt="my profile picture">
+            <img class="about__profileImg" src="img/profile1.JPG" alt="my profile picture">
             <h2 class="section__title section__title--about"></h2>
             <p class="about__desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -38,9 +56,10 @@
 
         </section>
 
+    
         <!-- My Services -->
         <section class="my-services" id="services">
-            <h2 class="section__title section__title--servies" >My Services </h2>
+            <h2 class="section__title section__title--services" >My Services </h2>
             <div class="service-list">
                 <!-- Front End -->
                 <div class="service-list__item">

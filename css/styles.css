@@ -341,13 +341,13 @@
 /* ----- My work Section ----- */
     .my-work{
         background-color: var(--clr-accent);
-        align-content: center;
     }
     .work-list{
         display: grid;
-        grid-template-columns: 300px 300px 300px;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, minmax(300px,300px));
         gap: 3em;
-        min-width: 300px;
+        
     }
     .work-list__item{
         background: var(--clr-light);

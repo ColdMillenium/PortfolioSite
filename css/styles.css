@@ -369,6 +369,15 @@
     {
         padding: 1em;
     }
+    .work-tool{
+        color:var(--clr-light);
+        display: inline-block;
+        background-color:var(--clr-accent);
+        padding: .25em .4em;
+        border-radius: .25rem;
+        line-height: 1rem;
+        margin: .1rem 0;
+    }
 
 
 

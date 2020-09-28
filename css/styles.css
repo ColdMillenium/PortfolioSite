@@ -56,16 +56,18 @@
     }
 
     button {
+        
         padding: 1em;
-        background-color: var(--clr-light);
+        background-color: var(--clr-dark);
         transition: var(--hover-transition);
         border: none;
         border-radius: 50px;
         cursor: pointer;
+        color: var(--clr-light);
     }
     button:hover{
         color: var(--clr-light);
-        background-color: var(--clr-accent);
+        background-color: var(--clr-accent)
     }
     html{
         scroll-behavior:smooth;
@@ -83,6 +85,7 @@
 
     section {
         padding: 5em 2em;
+       
     }
     .section__title{
         text-align: center;
@@ -139,8 +142,8 @@
             padding: 0px 1em;
         }
 
-        .nav-bar__link a, 
-        .nav-bar__button{
+        .nav-bar__link a 
+        {
             transition: var(--hover-transition);
             color: var(--clr-dark);
         }
@@ -382,4 +385,29 @@
 
 
 /* ----- Contact Section ----- */
-    /* TODO */
+    .contact{
+        margin-top: 11rem;
+        background-color: black;
+       
+    }
+   .contact__get-in-touch{
+       
+       background-color: var(--clr-dark);
+       padding: 3em;
+       border-radius: 0.75rem;
+       text-align: center;
+       max-width: 80em;
+       min-width: 300px;
+       margin:auto;
+       margin-top: -11rem;
+       
+   }
+   .section__title--contact,
+   .section__subtitle--contact
+   {
+    color:white;
+   }
+   .contact__button{
+        border: solid var(--clr-accent) 3px;
+   }
+   

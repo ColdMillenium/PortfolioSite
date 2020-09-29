@@ -410,4 +410,18 @@
    .contact__button{
         border: solid var(--clr-accent) 3px;
    }
+   .contact__list{
+       display: flex;
+       justify-content: space-evenly;
+       color: white;
+       font-weight: var(--fw-bold);
+   }
+   .contact__list-item{
+       display: flex;
+   }
+   .contact__list-item img{
+       height: 50px;
+       fill: var(--clr-accent);
+   }
+   
    

@@ -151,6 +151,7 @@
         align-items:center;
         padding: 0em 0.5em;
         background-color: black;
+        height: 80px;
     }
     /* Navigation: bar links */
         .nav-bar__link {
@@ -161,7 +162,7 @@
         .nav-bar__link a 
         {
             transition: var(--hover-transition);
-            color: var(--clr-dark);
+            color: var(--clr-light)
         }
         .nav-bar__link :hover{
             color: var(--clr-accent);
@@ -273,12 +274,13 @@
 
 /* ------ Welcome Section -------*/
     .welcome{
-        color: var(--clr-light);
-        height: 100vh;
+        color: white;
+        height: calc(100vh - 80px);
         display: flex;
         justify-content: center;
+        align-items: center;
         background-size: cover;
-        background-image: linear-gradient(180deg, rgba(153, 221, 255, 0.89) 0%, #00458bee 100% ), url(/img/desk.jpg);
+        background-image: linear-gradient(180deg, rgba(30, 104, 121, 0.89) 0%, hsla(210, 90%, 24%, 0.933) 100% ), url(/img/desk.jpg);
         
     }
     .welcome-img{
@@ -289,7 +291,8 @@
         font-size: 5em;
         text-align: center;
         color: white;
-        font-weight: var(--fw-light);
+        font-weight: var(--fw-reg);
+        margin-bottom:0;
     }
     .welcome-title-wrapper{
         /* background-color: var(--clr-accent) ; */
@@ -300,6 +303,9 @@
         display:inline;
         color: var(--clr-accent);
         font-weight: var(--fw-reg);
+    }
+    .section__subtitle--welcome{
+        font-weight: var(--fw-bold);
     }
     /* .element {
         position: absolute;
@@ -416,7 +422,9 @@
 
 /* ----- My work Section ----- */
   
-
+    .section__subtitle--work{
+        text-align:left;
+    }
     .my-work{
         /* background-color: var(--clr-accent); */
     }

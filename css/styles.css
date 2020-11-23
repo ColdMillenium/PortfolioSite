@@ -288,10 +288,11 @@
         opacity: 0.3;
     }
     .section__title--welcome{
-        font-size: 5em;
+        font-family: var(--ff-primary);
+        font-size: 6em;
         text-align: center;
         color: white;
-        font-weight: var(--fw-reg);
+        font-weight: var(--fw-light);
         margin-bottom:0;
     }
     .welcome-title-wrapper{
@@ -299,14 +300,16 @@
         
         
     }
+    .section__subtitle--welcome{
+        font-family: var(--ff-secondary);
+        font-weight: var(--fw-bold);
+    }
     .welcome-emphasis{
         display:inline;
         color: var(--clr-accent);
         font-weight: var(--fw-reg);
     }
-    .section__subtitle--welcome{
-        font-weight: var(--fw-bold);
-    }
+   
     /* .element {
         position: absolute;
         right:0;

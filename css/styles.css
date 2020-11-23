@@ -295,8 +295,9 @@
         text-align: center;
         color: white;
         font-weight: var(--fw-light);
-        margin-bottom:0;
+        margin-bottom: 10px;
         animation: textDown 3s 1;
+        padding: 0;
     }
     .welcome-title-wrapper{
         /* background-color: var(--clr-accent) ; */
@@ -308,6 +309,8 @@
         font-family: var(--ff-primary);
         font-weight: var(--fw-bold);
         animation: textUp 3s 1;
+        text-transform: uppercase;
+        min-width: 100vw;
     }
     .welcome-emphasis{
         display:inline;
@@ -319,6 +322,7 @@
         0%{
             opacity: 0;
             /* color: black; */
+            margin-right: 10em;
         }
     }
 
@@ -326,7 +330,7 @@
         0%{
             opacity: 0;
             /* color: black; */
-            margin-top: 10em;
+            margin-left: 10em;
         }
     }
    

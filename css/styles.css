@@ -84,6 +84,7 @@
         font-weight: var(--fw-reg);
         font-size: var(--fs-body);
         line-height: 1.6;
+        width: 100vw;
     }
     p {
         font-family: var(--ff-secondary);

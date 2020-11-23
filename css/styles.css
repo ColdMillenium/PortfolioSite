@@ -132,6 +132,7 @@
 /* ----- Navigation ----- */
     .nav-menu {
         display: none;
+        width: 100%;
     }
     .nav-bar__links,
     .nav-menu__links{
@@ -153,6 +154,7 @@
         padding: 0em 0.5em;
         background-color: black;
         height: 80px;
+        width: 100%;
     }
     /* Navigation: bar links */
         .nav-bar__link {
@@ -282,7 +284,6 @@
         align-items: center;
         background-size: cover;
         background-image: linear-gradient(180deg, rgba(30, 104, 121, 0.89) 0%, hsla(210, 90%, 24%, 0.933) 100% ), url(/img/desk.jpg);
-        
     }
     .welcome-img{
         
@@ -295,20 +296,38 @@
         color: white;
         font-weight: var(--fw-light);
         margin-bottom:0;
+        animation: textDown 3s 1;
     }
     .welcome-title-wrapper{
         /* background-color: var(--clr-accent) ; */
         
         
     }
+    
     .section__subtitle--welcome{
         font-family: var(--ff-primary);
         font-weight: var(--fw-bold);
+        animation: textUp 3s 1;
     }
     .welcome-emphasis{
         display:inline;
         color: var(--clr-accent);
         font-weight: var(--fw-reg);
+    }
+
+    @keyframes textDown{
+        0%{
+            opacity: 0;
+            /* color: black; */
+        }
+    }
+
+    @keyframes textUp{
+        0%{
+            opacity: 0;
+            /* color: black; */
+            margin-top: 10em;
+        }
     }
    
     /* .element {
@@ -341,12 +360,18 @@
 
 /* ----- About Section ----- */
     .about-me{
+        display:flex;
+        align-content: center;
+        justify-content: center;
+    }
+    .about_wrapper{
+        max-width: 70em;
         display:grid;
         grid-column-gap: 3em;
         grid-template-areas:
-            "img title"
-            "img desc"
-            "img desc";
+            "title title title"
+            "img desc desc"
+            "img desc desc";
 
     }
     .about__profileImg{
@@ -361,7 +386,7 @@
     }
     .section__title--about{
         grid-area: title;
-        text-align: left;
+        text-align: center;
     }
 
 
@@ -431,13 +456,13 @@
     }
     .my-work{
         /* background-color: var(--clr-accent); */
+        width:100vw;
     }
     .work-list{
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(auto-fit, minmax(400px,300px));
+        grid-template-columns: repeat(auto-fit, minmax(400px,400px));
         gap: 3em;
-        
     }
     .work-list__item{
         background: white;

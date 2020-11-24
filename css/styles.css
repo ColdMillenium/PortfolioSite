@@ -299,9 +299,24 @@
         animation: textDown 3s 1;
         padding: 0;
     }
+    .welcome-name-svg{
+        font-family: var(--ff-primary);
+        font-size: 10em;
+        fill: white;
+        font-weight: var(--fw-light);
+        animation: textDown 3s 1;
+        padding: 0;
+       
+    }
+    .welcome-name-svg text{
+
+    }
     .welcome-title-wrapper{
         /* background-color: var(--clr-accent) ; */
-        
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         
     }
     
@@ -310,7 +325,6 @@
         font-weight: var(--fw-bold);
         animation: textUp 3s 1;
         text-transform: uppercase;
-        min-width: 100vw;
     }
     .welcome-emphasis{
         display:inline;
@@ -322,7 +336,7 @@
         0%{
             opacity: 0;
             /* color: black; */
-            margin-right: 10em;
+            margin-right: 500px;
         }
     }
 
@@ -330,7 +344,7 @@
         0%{
             opacity: 0;
             /* color: black; */
-            margin-left: 10em;
+            margin-left: 500px;
         }
     }
    

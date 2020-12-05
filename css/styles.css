@@ -74,17 +74,21 @@
     html{
         scroll-behavior:smooth;
     }
+    html, body{
+ 
+        margin:0;
+        min-width: 100%;
+        min-height: 100%
+    }
 
 
     body {
         background: white;
         color: var(--clr-dark);
-        margin: 0;
         font-family: var(--ff-primary);
         font-weight: var(--fw-reg);
         font-size: var(--fs-body);
         line-height: 1.6;
-        width: 100vw;
     }
     p {
         font-family: var(--ff-secondary);
